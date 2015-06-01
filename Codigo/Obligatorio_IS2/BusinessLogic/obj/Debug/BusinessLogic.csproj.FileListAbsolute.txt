@@ -1,0 +1,14 @@
+C:\IS2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\IS2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\IS2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\IS2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\IS2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\IS2\BusinessLogic\bin\Debug\Model.dll
+C:\IS2\BusinessLogic\bin\Debug\Model.pdb
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Model.dll
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Model.pdb
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.pdb

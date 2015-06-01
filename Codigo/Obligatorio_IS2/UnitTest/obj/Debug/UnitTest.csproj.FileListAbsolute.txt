@@ -1,0 +1,4 @@
+C:\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.dll
+C:\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.pdb
+C:\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.dll
+C:\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.pdb

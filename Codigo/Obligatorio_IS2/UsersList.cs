@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Obligatorio_IS2
 {
-    public partial class Form1 : Form
+    public partial class UsersList : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public UsersList()
         {
             InitializeComponent();
         }
