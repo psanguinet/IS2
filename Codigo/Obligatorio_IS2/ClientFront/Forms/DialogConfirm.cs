@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Obligatorio_IS2
+namespace ClientFront.Forms
 {
     public partial class DialogConfirm : MetroFramework.Forms.MetroForm
     {

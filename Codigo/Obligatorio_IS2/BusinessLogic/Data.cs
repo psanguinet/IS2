@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace BusinessLogic
 {
@@ -27,6 +28,7 @@ namespace BusinessLogic
                 Marca = "Gelen",
                 Rubro = "Frutas",
                 Tipo = "1",
+                Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\manzanas.jpg")
             };
             Producto p2 = new Producto()
            {
@@ -36,6 +38,7 @@ namespace BusinessLogic
                Marca = "Guarino",
                Rubro = "Frutas",
                Tipo = "3",
+               Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\naranjas.jpg")
            };
             Producto p3 = new Producto()
            {
@@ -45,10 +48,45 @@ namespace BusinessLogic
                Marca = "SolNegro",
                Rubro = "Frutas",
                Tipo = "1",
+               Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\kiwy.jpg")
+
            };
+            Producto p4 = new Producto()
+            {
+                Codigo = "4",
+                Nombre = "Peras",
+                Precio = 40,
+                Marca = "Rio",
+                Rubro = "Frutas",
+                Tipo = "1",
+                Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\peras.jpg")
+            };
+            Producto p5 = new Producto()
+            {
+                Codigo = "5",
+                Nombre = "Arroz",
+                Precio = 38,
+                Marca = "Saman",
+                Rubro = "Comestibles",
+                Tipo = "1",
+                Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\arroz.jpg")
+            };
+            Producto p6 = new Producto()
+            {
+                Codigo = "6",
+                Nombre = "Aceite",
+                Precio = 38,
+                Marca = "Saman",
+                Rubro = "Comestibles",
+                Tipo = "1",
+                Imagen = Image.FromFile(Environment.CurrentDirectory + @"\Resources\aceite.jpg")
+            };
             lista.Add(p1);
             lista.Add(p2);
             lista.Add(p3);
+            lista.Add(p4);
+            lista.Add(p5);
+            lista.Add(p6);
             return lista;
         }
 

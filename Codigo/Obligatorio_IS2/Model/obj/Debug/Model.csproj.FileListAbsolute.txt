@@ -7,3 +7,9 @@ C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Model.dll
 C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Model.pdb
 C:\IS2\Codigo\Obligatorio_IS2\Model\obj\Debug\Model.dll
 C:\IS2\Codigo\Obligatorio_IS2\Model\obj\Debug\Model.pdb
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\aceite.jpg
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\arroz.jpg
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\kiwy.jpg
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\manzanas.jpg
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\naranjas.jpg
+C:\IS2\Codigo\Obligatorio_IS2\Model\bin\Debug\Resources\peras.jpg

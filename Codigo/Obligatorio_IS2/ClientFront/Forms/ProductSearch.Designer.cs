@@ -1,6 +1,6 @@
-﻿namespace Obligatorio_IS2
+﻿namespace ClientFront.Forms
 {
-    partial class ProductList
+    partial class ProductSearch
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // ProductList
+            // ProductSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "ProductList";
-            this.Text = "Listado de productos";
+            this.Name = "ProductSearch";
+            this.Text = "ProductSearch";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
 
         }

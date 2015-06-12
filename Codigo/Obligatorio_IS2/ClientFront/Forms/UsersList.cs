@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Obligatorio_IS2
+namespace ClientFront.Forms
 {
-    public partial class ProductList : MetroFramework.Forms.MetroForm
+    public partial class UsersList : MetroFramework.Forms.MetroForm
     {
-        public ProductList()
+        public UsersList()
         {
             InitializeComponent();
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Drawing;
 namespace Model
 {
     public class Producto
@@ -14,6 +14,7 @@ namespace Model
         public string Tipo { get; set; }
         public string Marca { get; set; }
         public double Precio { get; set; }
+        public Image Imagen { get; set; }
 
         public Producto()
         { 

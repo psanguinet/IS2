@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Obligatorio_IS2
+namespace ClientFront.Forms
 {
     public partial class PanelPrincipal : MetroFramework.Forms.MetroForm
     {
@@ -40,7 +40,7 @@ namespace Obligatorio_IS2
             catch (Exception ex)
             {
                 
-                 MessageBox.Show("Error al mostrar el listado de usuarios " + ex.Message);
+                 MessageBox.Show("Error al mostrar el listado de productos " + ex.Message);
             }
         }
 
@@ -55,6 +55,20 @@ namespace Obligatorio_IS2
             catch (Exception ex)
             {
                 MessageBox.Show("Error al salir del sitema " + ex.Message);
+            }
+        }
+
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ProductSearch productsSearch = new ProductSearch();
+                productsSearch.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al buscar productos " + ex.Message);
             }
         }
     }

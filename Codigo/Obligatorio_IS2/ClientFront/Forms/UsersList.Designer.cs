@@ -1,4 +1,4 @@
-﻿namespace Obligatorio_IS2
+﻿namespace ClientFront.Forms
 {
     partial class UsersList
     {

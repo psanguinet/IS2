@@ -1,4 +1,4 @@
-﻿namespace Obligatorio_IS2
+﻿namespace ClientFront.Forms
 {
     partial class DialogConfirm
     {
@@ -38,12 +38,13 @@
             this.lblMessage.AutoSize = true;
             this.lblMessage.Location = new System.Drawing.Point(99, 97);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(236, 19);
+            this.lblMessage.Size = new System.Drawing.Size(242, 19);
             this.lblMessage.TabIndex = 0;
-            this.lblMessage.Text = "Está seguro que desea salir del sistema";
+            this.lblMessage.Text = "Está seguro que desea salir del sistema?";
             // 
             // btnAccept
             // 
+            this.btnAccept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccept.Location = new System.Drawing.Point(234, 139);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(119, 38);
