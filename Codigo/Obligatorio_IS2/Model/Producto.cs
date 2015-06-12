@@ -9,6 +9,7 @@ namespace Model
     public class Producto
     {
         public string Nombre { get; set; }
+        public string Descripcion { get; set; }
         public string Codigo { get; set; }
         public string Rubro { get; set; }
         public string Tipo { get; set; }

@@ -24,6 +24,7 @@ namespace BusinessLogic
             {
                 Codigo = "1",
                 Nombre = "Manzanas",
+                Descripcion = "Manzanas rojas de calidad superior",
                 Precio = 30,
                 Marca = "Gelen",
                 Rubro = "Frutas",
@@ -34,6 +35,7 @@ namespace BusinessLogic
            {
                Codigo = "2",
                Nombre = "Naranjas",
+               Descripcion = "Super jugosas provenientes de Salto - Uruguay.",
                Precio = 35,
                Marca = "Guarino",
                Rubro = "Frutas",
@@ -44,6 +46,7 @@ namespace BusinessLogic
            {
                Codigo = "3",
                Nombre = "Kiwy",
+               Descripcion = "Importados. Calidad superior.",
                Precio = 89,
                Marca = "SolNegro",
                Rubro = "Frutas",
@@ -55,6 +58,7 @@ namespace BusinessLogic
             {
                 Codigo = "4",
                 Nombre = "Peras",
+                Descripcion = "Importadas. Calidad superior.",
                 Precio = 40,
                 Marca = "Rio",
                 Rubro = "Frutas",
@@ -65,6 +69,7 @@ namespace BusinessLogic
             {
                 Codigo = "5",
                 Nombre = "Arroz",
+                Descripcion= "Blue. Calidad superior.",
                 Precio = 38,
                 Marca = "Saman",
                 Rubro = "Comestibles",
@@ -75,6 +80,7 @@ namespace BusinessLogic
             {
                 Codigo = "6",
                 Nombre = "Aceite",
+                Descripcion = "Oliva. Importado. Calidad superior.",
                 Precio = 38,
                 Marca = "Saman",
                 Rubro = "Comestibles",
