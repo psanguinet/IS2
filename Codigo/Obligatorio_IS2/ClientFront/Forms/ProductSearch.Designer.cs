@@ -36,6 +36,7 @@
             this.rbtRubro = new MetroFramework.Controls.MetroRadioButton();
             this.btnBuscar = new MetroFramework.Controls.MetroTile();
             this.panelProduct = new MetroFramework.Controls.MetroPanel();
+            this.btnSiguiente = new MetroFramework.Controls.MetroTile();
             this.lblPrecioValue = new MetroFramework.Drawing.Html.HtmlLabel();
             this.lblTipoValue = new MetroFramework.Controls.MetroLabel();
             this.lblTipo = new MetroFramework.Controls.MetroLabel();
@@ -48,7 +49,6 @@
             this.lblCodigoValue = new MetroFramework.Controls.MetroLabel();
             this.lblCodigo = new MetroFramework.Controls.MetroLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.btnSiguiente = new MetroFramework.Controls.MetroTile();
             this.panelProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -153,6 +153,23 @@
             this.panelProduct.VerticalScrollbarHighlightOnWheel = false;
             this.panelProduct.VerticalScrollbarSize = 10;
             this.panelProduct.Visible = false;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.ActiveControl = null;
+            this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSiguiente.Location = new System.Drawing.Point(438, 386);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(149, 35);
+            this.btnSiguiente.TabIndex = 7;
+            this.btnSiguiente.Text = "Siguiente >>";
+            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiguiente.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSiguiente.UseSelectable = true;
+            this.btnSiguiente.UseTileImage = true;
+            this.btnSiguiente.Visible = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // lblPrecioValue
             // 
@@ -265,21 +282,6 @@
             this.pictureBox.TabIndex = 2;
             this.pictureBox.TabStop = false;
             // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.ActiveControl = null;
-            this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSiguiente.Location = new System.Drawing.Point(438, 386);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(149, 35);
-            this.btnSiguiente.TabIndex = 7;
-            this.btnSiguiente.Text = "Siguiente >>";
-            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiguiente.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.UseSelectable = true;
-            this.btnSiguiente.UseTileImage = true;
-            // 
             // ProductSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,7 +296,6 @@
             this.Controls.Add(this.txtSearchProducts);
             this.Name = "ProductSearch";
             this.Text = "Búsqueda de productos";
-            this.TopMost = true;
             this.panelProduct.ResumeLayout(false);
             this.panelProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
