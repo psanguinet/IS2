@@ -48,8 +48,8 @@ namespace ClientFront.Forms
         {
             try
             {
-                int usuarioAModif = 0;
-                ModificarUsuario modifUser = new ModificarUsuario(Data.GetInstance().DevolverUsuarios().ElementAt(usuarioAModif));
+                var usuario = (Model.Usuario)gridUsers.SelectedRows[0].DataBoundItem;
+                ModificarUsuario modifUser = new ModificarUsuario(usuario);
                 modifUser.Show();
             }
             catch (Exception ex)
