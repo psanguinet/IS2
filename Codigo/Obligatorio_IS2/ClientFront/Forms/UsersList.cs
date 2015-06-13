@@ -57,5 +57,26 @@ namespace ClientFront.Forms
                 MessageBox.Show("Error al modificar usuario " + ex.Message);
             }
         }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+            if (Data.GetInstance().DevolverUsuarios().Count > 0)
+            {
+                var usuario = (Model.Usuario)gridUsers.SelectedRows[0].DataBoundItem;
+
+                DialogResult dialogResult = MessageBox.Show(string.Format("Realmente desea borrar a {0} {1}", usuario.Nombre, usuario.Apellido), "Atención", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    BusinessLogic.Data.GetInstance().BorrarUsuario(usuario);
+                    this.Close();
+                }
+               
+            }
+            else
+            {
+                MessageBox.Show("No hay usuarios en el sistema");
+            }
+
+        }
     }
 }
