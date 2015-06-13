@@ -52,3 +52,5 @@ C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\
 C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.pdb
 C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.NuevoUsuario.resources
 C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ModificarUsuario.resources
+C:\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ModificarUsuario.resources
+C:\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.NuevoUsuario.resources
