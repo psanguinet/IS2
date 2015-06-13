@@ -43,7 +43,7 @@
             this.btnListUsuarios.Name = "btnListUsuarios";
             this.btnListUsuarios.Size = new System.Drawing.Size(220, 100);
             this.btnListUsuarios.TabIndex = 4;
-            this.btnListUsuarios.Text = "Listado de Usuarios";
+            this.btnListUsuarios.Text = "Gestión de Usuarios";
             this.btnListUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListUsuarios.UseSelectable = true;
             this.btnListUsuarios.Click += new System.EventHandler(this.btnListUsuarios_Click);

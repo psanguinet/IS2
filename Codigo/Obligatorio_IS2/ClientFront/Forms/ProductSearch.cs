@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
 using Model;
 
 namespace ClientFront.Forms
@@ -25,13 +26,12 @@ namespace ClientFront.Forms
             Producto product = null;
             List<Producto> products = new List<Producto>();
 
-            BusinessLogic.Data info = new BusinessLogic.Data();
             if (searchValue != string.Empty)
             {
                 if (rbtNombre.Checked)
                 {
                     searchOption = "NOMBRE";
-                    product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Nombre == searchValue);
+                    product = Data.GetInstance().ListarProductosOrdenados().SingleOrDefault(p => p.Nombre == searchValue);
                     if (product == null)
                     {
                         DialogConfirm dialog = new DialogConfirm(String.Format("El producto de nombre {0}", searchValue, " no se encuentra."));
@@ -44,7 +44,7 @@ namespace ClientFront.Forms
                 if (rbtCodigo.Checked)
                 {
                     searchOption = "CODIGO";
-                    product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Codigo == searchValue);
+                    product = Data.GetInstance().ListarProductosOrdenados().SingleOrDefault(p => p.Codigo == searchValue);
                     if (product == null)
                     {
                         DialogConfirm dialog = new DialogConfirm(String.Format("El producto con código {0}", searchValue, " no se encuentra."));
@@ -57,7 +57,7 @@ namespace ClientFront.Forms
                 if (rbtRubro.Checked)
                 {
                     searchOption = "RUBRO";
-                    products = info.ListarProductosOrdenados().Where(p => p.Rubro == searchValue).ToList();
+                    products = Data.GetInstance().ListarProductosOrdenados().Where(p => p.Rubro == searchValue).ToList();
                     if (product == null)
                     {
                         DialogConfirm dialog = new DialogConfirm(String.Format("No se encuentran productos del rubro {0}", searchValue));
@@ -66,7 +66,7 @@ namespace ClientFront.Forms
                 if (rbtTipo.Checked)
                 {
                     searchOption = "TIPO";
-                    products = info.ListarProductosOrdenados().Where(p => p.Tipo == searchValue).ToList();
+                    products = Data.GetInstance().ListarProductosOrdenados().Where(p => p.Tipo == searchValue).ToList();
                     if (product == null)
                     {
                         DialogConfirm dialog = new DialogConfirm(String.Format("No se encuentran productos del tipo {0}", searchValue));

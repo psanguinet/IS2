@@ -18,3 +18,16 @@ C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\kiwy.jpg
 C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\manzanas.jpg
 C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\naranjas.jpg
 C:\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\peras.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\aceite.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\arroz.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\kiwy.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\manzanas.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\naranjas.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Resources\peras.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Model.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\bin\Debug\Model.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\BusinessLogic\obj\Debug\BusinessLogic.pdb

@@ -10,11 +10,45 @@ namespace BusinessLogic
 {
     public class Data
     {
-        private List<Producto> productos;
+        private static List<Producto> productos;
+        private static List<Usuario> usuarios;
+        private static Data instance;
 
-        public Data()
+        public static Data GetInstance()
+        {
+            if (instance == null) instance = new Data();
+            return instance;
+        }
+        private Data()
         {
             productos = CargarProductos();
+            usuarios = CargarUsuarios();
+        }
+
+        private List<Usuario> CargarUsuarios()
+        {
+            List<Usuario> lista = new List<Usuario>();
+            Usuario u1= new Usuario()
+            {
+                 Apellido = "Sanguinet",
+                 Contrasenia = "megustaelkiwi",
+                 Direccion = "Uruguay 1275",
+                 Email = "psanguinet@gmail.com",
+                 Nombre = "Pablo",
+                 Telefono_Celular = "094000444"
+            };
+            Usuario u2 = new Usuario()
+            {
+                Apellido = "Canabarro",
+                Contrasenia = "andresito",
+                Direccion = "Bulevar Espania 2873",
+                Email = "andrescanabarro@gmail.com",
+                Nombre = "Andres",
+                Telefono_Celular = "098657882"
+            };
+            lista.Add(u1);
+            lista.Add(u2);
+            return lista;
         }
 
         private List<Producto> CargarProductos()
@@ -94,6 +128,27 @@ namespace BusinessLogic
             lista.Add(p5);
             lista.Add(p6);
             return lista;
+        }
+
+        public List<Usuario> DevolverUsuarios()
+        {
+            return usuarios;
+        }
+
+        public void AgregarUsuario(Usuario u)
+        {
+            usuarios.Add(u);
+        }
+
+        public void BorrarUsuario(Usuario u)
+        {
+            usuarios.Remove(u);
+        }
+
+        public void ModificarUsuario(Usuario u)
+        {
+            usuarios.Remove(u);
+            usuarios.Add(u);
         }
 
         public List<Producto> ListarProductosOrdenados()

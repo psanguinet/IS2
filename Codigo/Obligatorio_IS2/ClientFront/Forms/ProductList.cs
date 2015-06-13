@@ -23,8 +23,7 @@ namespace ClientFront.Forms
         {
             try
             {
-                Data info = new Data();
-                this.gridProducts.DataSource = info.ListarProductosOrdenados();
+                this.gridProducts.DataSource = Data.GetInstance().ListarProductosOrdenados();
             }
             catch (Exception)
             {

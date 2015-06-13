@@ -24,3 +24,31 @@ C:\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\manzanas.jpg
 C:\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\naranjas.jpg
 C:\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\peras.jpg
 C:\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ProductSearch.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\ClientFront.exe.config
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.csprojResolveAssemblyReference.cache
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.DialogConfirm.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.PanelPrincipal.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ProductList.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ProductSearch.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Properties.Resources.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.UsersList.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.csproj.GenerateResource.Cache
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\aceite.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\arroz.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\kiwy.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\manzanas.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\naranjas.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Resources\peras.jpg
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\ClientFront.exe
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\ClientFront.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\BusinessLogic.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\MetroFramework.Design.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\MetroFramework.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Model.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\BusinessLogic.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\bin\Debug\Model.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.exe
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.NuevoUsuario.resources
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\ClientFront\obj\Debug\ClientFront.Forms.ModificarUsuario.resources

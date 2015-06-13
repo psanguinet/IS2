@@ -53,11 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DialogConfirm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DialogConfirm.Designer.cs">
       <DependentUpon>DialogConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NuevoUsuario.Designer.cs">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PanelPrincipal.cs">
       <SubType>Form</SubType>
@@ -85,8 +97,14 @@
     <Compile Include="Forms\UsersList.Designer.cs">
       <DependentUpon>UsersList.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DialogConfirm.resx">
       <DependentUpon>DialogConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PanelPrincipal.resx">
       <DependentUpon>PanelPrincipal.cs</DependentUpon>

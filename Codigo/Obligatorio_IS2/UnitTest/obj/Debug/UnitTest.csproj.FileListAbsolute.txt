@@ -2,3 +2,8 @@ C:\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.dll
 C:\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.pdb
 C:\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.dll
 C:\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Andrés Canabarro\Documents\IS2\Codigo\Obligatorio_IS2\UnitTest\obj\Debug\UnitTest.pdb
