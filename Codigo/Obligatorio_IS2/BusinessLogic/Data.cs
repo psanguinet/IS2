@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Net.Mail;
 
 namespace BusinessLogic
 {
@@ -31,7 +32,7 @@ namespace BusinessLogic
             Usuario u1= new Usuario()
             {
                  Apellido = "Sanguinet",
-                 Contrasenia = "megustaelkiwi",
+                 Contrasenia = "Pablo1234",
                  Direccion = "Uruguay 1275",
                  Email = "psanguinet@gmail.com",
                  Nombre = "Pablo",
@@ -135,26 +136,108 @@ namespace BusinessLogic
             return usuarios;
         }
 
-        public void AgregarUsuario(Usuario u)
-        {
-            usuarios.Add(u);
-        }
-
         public void BorrarUsuario(Usuario u)
         {
             usuarios.Remove(u);
-        }
-
-        public void ModificarUsuario(Usuario u)
-        {
-            usuarios.Remove(u);
-            usuarios.Add(u);
         }
 
         public List<Producto> ListarProductosOrdenados()
         {
              return productos.OrderBy(n=>n.Nombre).ToList<Producto>();
              
+        }
+
+        public bool LongitudContraseniaValida(string pass)
+        {
+            return pass.Length >= 8 && pass.Length <= 14;
+        }
+
+        public bool MinimosContraseniaMayus(string pass)
+        {
+            char[] letras = new char[26];
+            string todosLetras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            letras = todosLetras.ToCharArray();
+            return pass.IndexOfAny(letras, 0)>=0;
+        }
+        public bool MinimosContraseniaNum(string pass)
+        {
+            char[] numeros = new char[10];
+            string todos = "0123456789";
+            numeros = todos.ToCharArray();
+            return pass.IndexOfAny(numeros, 0) >= 0;
+        }
+        public bool TelefonoValido(string tel)
+        {
+            return tel.Length == 9;
+        }
+        public bool FormatoMailAdecuado(string mail)
+        {
+            try
+            {
+                if (mail.Equals("")) return false;
+            MailAddress m = new MailAddress(mail);
+            return true;
+            }
+            catch (FormatException)
+            {
+            return false;
+            }
+        }
+
+        public string AgregarUsuario(string nombre, string apellido, string contrasenia, string confContrasenia, string direccion, string telefonoCelular, string email)
+        {
+            if (nombre.Equals(""))return "El nombre no puede ser vacio";
+            if (apellido.Equals("")) return "El apellido no puede ser vacio";
+            if (contrasenia.Equals("")) return "La contraseña no puede ser vacía";
+            if (!contrasenia.Equals(confContrasenia)) return "Las contraseñas no coinciden";
+            if (!LongitudContraseniaValida(contrasenia)) return "La contraseña es inválida, debe tener entre 8 y 14 caracteres";
+            if (!MinimosContraseniaMayus(contrasenia)) return "La contraseña es inválida, debe tener al menos 1 mayúscula";
+            if (!MinimosContraseniaNum(contrasenia)) return "La contraseña es inválida, debe tener al menos 1 número";
+            if (direccion.Equals("")) return "La dirección no puede ser vacía";
+            if (telefonoCelular.Equals("")) return "El teléfono celular no puede ser vacio";
+            if (!TelefonoValido(telefonoCelular)) return "El telefono debe tener 9 dígitos";
+            if (FormatoMailAdecuado(email)) return "El mail es inválido";
+
+            Usuario usu = new Usuario()
+            {
+              Nombre = nombre,
+              Apellido = apellido,
+              Contrasenia = contrasenia,
+              Telefono_Celular = telefonoCelular,
+              Direccion = direccion,
+              Email = email
+            };
+            usuarios.Add(usu);
+            return "";
+        }
+
+        public string ModificarUsuario(string nombre, string apellido, string contrasenia, string confContrasenia, string direccion, string telefonoCelular, string email)
+        {
+            if (nombre.Equals("")) return "El nombre no puede ser vacio";
+            if (apellido.Equals("")) return "El apellido no puede ser vacio";
+            if (contrasenia.Equals("")) return "La contraseña no puede ser vacía";
+            if (!contrasenia.Equals(confContrasenia)) return "Las contraseñas no coinciden";
+            if (!LongitudContraseniaValida(contrasenia)) return "La contraseña es inválida, debe tener entre 8 y 14 caracteres";
+            if (!MinimosContraseniaMayus(contrasenia)) return "La contraseña es inválida, debe tener al menos 1 mayúscula";
+            if (!MinimosContraseniaNum(contrasenia)) return "La contraseña es inválida, debe tener al menos 1 número";
+            if (direccion.Equals("")) return "La dirección no puede ser vacía";
+            if (telefonoCelular.Equals("")) return "El teléfono celular no puede ser vacio";
+            if (!TelefonoValido(telefonoCelular)) return "El telefono debe tener 9 dígitos";
+            if (!FormatoMailAdecuado(email)) return "El mail es inválido";
+
+            Usuario usu = new Usuario()
+            {
+                Nombre = nombre,
+                Apellido = apellido,
+                Contrasenia = contrasenia,
+                Telefono_Celular = telefonoCelular,
+                Direccion = direccion,
+                Email = email
+            };
+            usuarios.Remove(usu);
+            usuarios.Add(usu);
+            return "";
+        
         }
     }
 }
