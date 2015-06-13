@@ -23,6 +23,8 @@ namespace ClientFront.Forms
             string searchValue = this.txtSearchProducts.Text;
             string searchOption = string.Empty;
             Producto product = null;
+            List<Producto> products = new List<Producto>();
+
             BusinessLogic.Data info = new BusinessLogic.Data();
             if (searchValue != string.Empty)
             {
@@ -30,48 +32,64 @@ namespace ClientFront.Forms
                 {
                     searchOption = "NOMBRE";
                     product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Nombre == searchValue);
+                    if (product == null)
+                    {
+                        DialogConfirm dialog = new DialogConfirm(String.Format("El producto de nombre {0}", searchValue, " no se encuentra."));
+                    }
+                    else
+                    {
+                        ObjectToForm(product);
+                    }
                 }
                 if (rbtCodigo.Checked)
                 {
                     searchOption = "CODIGO";
                     product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Codigo == searchValue);
+                    if (product == null)
+                    {
+                        DialogConfirm dialog = new DialogConfirm(String.Format("El producto con código {0}", searchValue, " no se encuentra."));
+                    }
+                    else
+                    {
+                        ObjectToForm(product);
+                    }
                 }
                 if (rbtRubro.Checked)
                 {
                     searchOption = "RUBRO";
-                    product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Rubro == searchValue);
+                    products = info.ListarProductosOrdenados().Where(p => p.Rubro == searchValue).ToList();
+                    if (product == null)
+                    {
+                        DialogConfirm dialog = new DialogConfirm(String.Format("No se encuentran productos del rubro {0}", searchValue));
+                    }
                 }
                 if (rbtTipo.Checked)
                 {
                     searchOption = "TIPO";
-                    product = info.ListarProductosOrdenados().SingleOrDefault(p => p.Tipo == searchValue);
+                    products = info.ListarProductosOrdenados().Where(p => p.Tipo == searchValue).ToList();
+                    if (product == null)
+                    {
+                        DialogConfirm dialog = new DialogConfirm(String.Format("No se encuentran productos del tipo {0}", searchValue));
+                    }
                 }
-                if (product != null)
-                {
-                    lblCodigoValue.Text = product.Codigo;
-                    lblNombreValue.Text = product.Nombre;
-                    lblRubroValue.Text = product.Rubro;
-                    lblTipoValue.Text = product.Tipo;
-                    lblPrecioValue.Text = "$ " + product.Precio;
-                    lblDescripcionValue.Text = product.Descripcion;
-                    pictureBox.Image = product.Imagen;
-                    panelProduct.Visible = true;
-                }
-                else
-                {
-                    MessageBox.Show("No existe ningun producto");
-                }
-                
             }
             else
             {
                 MessageBox.Show("Error: debe ingresar informacion de búsqueda");
             }
-           
 
+        }
 
-
-
+        private void ObjectToForm(Producto product)
+        {
+            lblCodigoValue.Text = product.Codigo;
+            lblNombreValue.Text = product.Nombre;
+            lblRubroValue.Text = product.Rubro;
+            lblTipoValue.Text = product.Tipo;
+            lblPrecioValue.Text = "$ " + product.Precio;
+            lblDescripcionValue.Text = product.Descripcion;
+            pictureBox.Image = product.Imagen;
+            panelProduct.Visible = true;
         }
     }
 }

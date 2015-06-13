@@ -36,18 +36,19 @@
             this.rbtRubro = new MetroFramework.Controls.MetroRadioButton();
             this.btnBuscar = new MetroFramework.Controls.MetroTile();
             this.panelProduct = new MetroFramework.Controls.MetroPanel();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.lblCodigo = new MetroFramework.Controls.MetroLabel();
-            this.lblCodigoValue = new MetroFramework.Controls.MetroLabel();
-            this.lblDescripcion = new MetroFramework.Controls.MetroLabel();
-            this.lblDescripcionValue = new MetroFramework.Controls.MetroLabel();
-            this.lblNombre = new MetroFramework.Controls.MetroLabel();
-            this.lblNombreValue = new MetroFramework.Controls.MetroLabel();
-            this.lblRubroValue = new MetroFramework.Controls.MetroLabel();
-            this.lblRubro = new MetroFramework.Controls.MetroLabel();
+            this.lblPrecioValue = new MetroFramework.Drawing.Html.HtmlLabel();
             this.lblTipoValue = new MetroFramework.Controls.MetroLabel();
             this.lblTipo = new MetroFramework.Controls.MetroLabel();
-            this.lblPrecioValue = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.lblRubroValue = new MetroFramework.Controls.MetroLabel();
+            this.lblRubro = new MetroFramework.Controls.MetroLabel();
+            this.lblNombreValue = new MetroFramework.Controls.MetroLabel();
+            this.lblNombre = new MetroFramework.Controls.MetroLabel();
+            this.lblDescripcionValue = new MetroFramework.Controls.MetroLabel();
+            this.lblDescripcion = new MetroFramework.Controls.MetroLabel();
+            this.lblCodigoValue = new MetroFramework.Controls.MetroLabel();
+            this.lblCodigo = new MetroFramework.Controls.MetroLabel();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.btnSiguiente = new MetroFramework.Controls.MetroTile();
             this.panelProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -128,6 +129,7 @@
             // 
             this.panelProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelProduct.Controls.Add(this.btnSiguiente);
             this.panelProduct.Controls.Add(this.lblPrecioValue);
             this.panelProduct.Controls.Add(this.lblTipoValue);
             this.panelProduct.Controls.Add(this.lblTipo);
@@ -152,86 +154,17 @@
             this.panelProduct.VerticalScrollbarSize = 10;
             this.panelProduct.Visible = false;
             // 
-            // pictureBox
+            // lblPrecioValue
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox.Location = new System.Drawing.Point(247, 25);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(340, 342);
-            this.pictureBox.TabIndex = 2;
-            this.pictureBox.TabStop = false;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(37, 35);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(56, 19);
-            this.lblCodigo.TabIndex = 3;
-            this.lblCodigo.Text = "Código:";
-            // 
-            // lblCodigoValue
-            // 
-            this.lblCodigoValue.AutoSize = true;
-            this.lblCodigoValue.Location = new System.Drawing.Point(99, 35);
-            this.lblCodigoValue.Name = "lblCodigoValue";
-            this.lblCodigoValue.Size = new System.Drawing.Size(99, 19);
-            this.lblCodigoValue.TabIndex = 4;
-            this.lblCodigoValue.Text = "lblCodigoValue";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(8, 234);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(79, 19);
-            this.lblDescripcion.TabIndex = 5;
-            this.lblDescripcion.Text = "Descripción:";
-            // 
-            // lblDescripcionValue
-            // 
-            this.lblDescripcionValue.AutoSize = true;
-            this.lblDescripcionValue.Location = new System.Drawing.Point(8, 269);
-            this.lblDescripcionValue.Name = "lblDescripcionValue";
-            this.lblDescripcionValue.Size = new System.Drawing.Size(108, 19);
-            this.lblDescripcionValue.TabIndex = 6;
-            this.lblDescripcionValue.Text = "DescripciónValue";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(31, 64);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 19);
-            this.lblNombre.TabIndex = 7;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // lblNombreValue
-            // 
-            this.lblNombreValue.AutoSize = true;
-            this.lblNombreValue.Location = new System.Drawing.Point(99, 64);
-            this.lblNombreValue.Name = "lblNombreValue";
-            this.lblNombreValue.Size = new System.Drawing.Size(105, 19);
-            this.lblNombreValue.TabIndex = 8;
-            this.lblNombreValue.Text = "lblNombreValue";
-            // 
-            // lblRubroValue
-            // 
-            this.lblRubroValue.AutoSize = true;
-            this.lblRubroValue.Location = new System.Drawing.Point(99, 100);
-            this.lblRubroValue.Name = "lblRubroValue";
-            this.lblRubroValue.Size = new System.Drawing.Size(91, 19);
-            this.lblRubroValue.TabIndex = 10;
-            this.lblRubroValue.Text = "lblRubroValue";
-            // 
-            // lblRubro
-            // 
-            this.lblRubro.AutoSize = true;
-            this.lblRubro.Location = new System.Drawing.Point(45, 100);
-            this.lblRubro.Name = "lblRubro";
-            this.lblRubro.Size = new System.Drawing.Size(48, 19);
-            this.lblRubro.TabIndex = 9;
-            this.lblRubro.Text = "Rubro:";
+            this.lblPrecioValue.AutoScroll = true;
+            this.lblPrecioValue.AutoScrollMinSize = new System.Drawing.Size(104, 48);
+            this.lblPrecioValue.AutoSize = false;
+            this.lblPrecioValue.BackColor = System.Drawing.SystemColors.Window;
+            this.lblPrecioValue.Location = new System.Drawing.Point(31, 171);
+            this.lblPrecioValue.Name = "lblPrecioValue";
+            this.lblPrecioValue.Size = new System.Drawing.Size(187, 51);
+            this.lblPrecioValue.TabIndex = 13;
+            this.lblPrecioValue.Text = "Precio";
             // 
             // lblTipoValue
             // 
@@ -251,17 +184,101 @@
             this.lblTipo.TabIndex = 11;
             this.lblTipo.Text = "Tipo:";
             // 
-            // lblPrecioValue
+            // lblRubroValue
             // 
-            this.lblPrecioValue.AutoScroll = true;
-            this.lblPrecioValue.AutoScrollMinSize = new System.Drawing.Size(104, 48);
-            this.lblPrecioValue.AutoSize = false;
-            this.lblPrecioValue.BackColor = System.Drawing.SystemColors.Window;
-            this.lblPrecioValue.Location = new System.Drawing.Point(31, 171);
-            this.lblPrecioValue.Name = "lblPrecioValue";
-            this.lblPrecioValue.Size = new System.Drawing.Size(187, 51);
-            this.lblPrecioValue.TabIndex = 13;
-            this.lblPrecioValue.Text = "Precio";
+            this.lblRubroValue.AutoSize = true;
+            this.lblRubroValue.Location = new System.Drawing.Point(99, 100);
+            this.lblRubroValue.Name = "lblRubroValue";
+            this.lblRubroValue.Size = new System.Drawing.Size(91, 19);
+            this.lblRubroValue.TabIndex = 10;
+            this.lblRubroValue.Text = "lblRubroValue";
+            // 
+            // lblRubro
+            // 
+            this.lblRubro.AutoSize = true;
+            this.lblRubro.Location = new System.Drawing.Point(45, 100);
+            this.lblRubro.Name = "lblRubro";
+            this.lblRubro.Size = new System.Drawing.Size(48, 19);
+            this.lblRubro.TabIndex = 9;
+            this.lblRubro.Text = "Rubro:";
+            // 
+            // lblNombreValue
+            // 
+            this.lblNombreValue.AutoSize = true;
+            this.lblNombreValue.Location = new System.Drawing.Point(99, 64);
+            this.lblNombreValue.Name = "lblNombreValue";
+            this.lblNombreValue.Size = new System.Drawing.Size(105, 19);
+            this.lblNombreValue.TabIndex = 8;
+            this.lblNombreValue.Text = "lblNombreValue";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(31, 64);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(62, 19);
+            this.lblNombre.TabIndex = 7;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblDescripcionValue
+            // 
+            this.lblDescripcionValue.AutoSize = true;
+            this.lblDescripcionValue.Location = new System.Drawing.Point(8, 269);
+            this.lblDescripcionValue.Name = "lblDescripcionValue";
+            this.lblDescripcionValue.Size = new System.Drawing.Size(108, 19);
+            this.lblDescripcionValue.TabIndex = 6;
+            this.lblDescripcionValue.Text = "DescripciónValue";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(8, 234);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(79, 19);
+            this.lblDescripcion.TabIndex = 5;
+            this.lblDescripcion.Text = "Descripción:";
+            // 
+            // lblCodigoValue
+            // 
+            this.lblCodigoValue.AutoSize = true;
+            this.lblCodigoValue.Location = new System.Drawing.Point(99, 35);
+            this.lblCodigoValue.Name = "lblCodigoValue";
+            this.lblCodigoValue.Size = new System.Drawing.Size(99, 19);
+            this.lblCodigoValue.TabIndex = 4;
+            this.lblCodigoValue.Text = "lblCodigoValue";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(37, 35);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(56, 19);
+            this.lblCodigo.TabIndex = 3;
+            this.lblCodigo.Text = "Código:";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox.Location = new System.Drawing.Point(247, 25);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(340, 342);
+            this.pictureBox.TabIndex = 2;
+            this.pictureBox.TabStop = false;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.ActiveControl = null;
+            this.btnSiguiente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSiguiente.Location = new System.Drawing.Point(438, 386);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(149, 35);
+            this.btnSiguiente.TabIndex = 7;
+            this.btnSiguiente.Text = "Siguiente >>";
+            this.btnSiguiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiguiente.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSiguiente.UseSelectable = true;
+            this.btnSiguiente.UseTileImage = true;
             // 
             // ProductSearch
             // 
@@ -307,5 +324,6 @@
         private MetroFramework.Controls.MetroLabel lblNombreValue;
         private MetroFramework.Controls.MetroLabel lblNombre;
         private MetroFramework.Drawing.Html.HtmlLabel lblPrecioValue;
+        private MetroFramework.Controls.MetroTile btnSiguiente;
     }
 }
