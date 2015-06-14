@@ -31,7 +31,7 @@ namespace BusinessLogic
             Usuario u1= new Usuario()
             {
                  Apellido = "Sanguinet",
-                 Contrasenia = "megustaelkiwi",
+                 Contrasenia = "Megustaelkiwi1",
                  Direccion = "Uruguay 1275",
                  Email = "psanguinet@gmail.com",
                  Nombre = "Pablo",

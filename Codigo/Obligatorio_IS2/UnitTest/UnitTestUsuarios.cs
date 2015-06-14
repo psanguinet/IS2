@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
+using BusinessLogic;
 
 namespace UnitTest
 {
@@ -8,7 +9,7 @@ namespace UnitTest
     public class UnitTestUsuarios
     {
 
-        private Usuario user = new Usuario()
+       private Usuario u1 = new Usuario()
         {
             Apellido = "Sanguinet",
             Contrasenia = "Megustaelkiwi1",
@@ -21,7 +22,7 @@ namespace UnitTest
         [TestMethod]
         public void TestAltaUsuario()
         {
-           
+
         }
 
         [TestMethod]
@@ -32,6 +33,11 @@ namespace UnitTest
         [TestMethod]
         public void TestBajaUsuario()
         {
+            int lengthBefore = Data.GetInstance().DevolverUsuarios().Count;
+            Data.GetInstance().BorrarUsuario(u1);
+            int lengthAfter = Data.GetInstance().DevolverUsuarios().Count;
+            Assert.AreEqual(lengthBefore, lengthAfter+1);
+            //hay problemas con la baja de usuarios o con la obtencion de la lista de usuarios
         }
     }
 }
