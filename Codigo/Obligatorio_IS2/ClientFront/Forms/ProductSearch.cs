@@ -33,19 +33,19 @@ namespace ClientFront.Forms
             {
                 if (rbtNombre.Checked)
                 {
-                    ShowProductByName(searchValue, ref searchOption, ref product);
+                    ShowProductByName(searchValue, ref product);
                 }
                 if (rbtCodigo.Checked)
                 {
-                    ShowProductByCode(searchValue, ref searchOption, ref product);
+                    ShowProductByCode(searchValue, ref product);
                 }
                 if (rbtRubro.Checked)
                 {
-                    ShowProductByRubro(searchValue, ref searchOption);
+                    ShowProductByRubro(searchValue);
                 }
                 if (rbtTipo.Checked)
                 {
-                    ShowProductByTipo(searchValue, ref searchOption);
+                    ShowProductByType(searchValue);
                 }
             }
             else
@@ -55,10 +55,9 @@ namespace ClientFront.Forms
 
         }
 
-        private void ShowProductByTipo(string searchValue, ref string searchOption)
+        private void ShowProductByType(string searchValue)
         {
-            searchOption = "TIPO";
-            Products = Data.GetInstance().ListarProductosOrdenados().Where(p => p.Tipo.ToUpper() == searchValue.ToUpper()).ToList();
+            Products = Data.GetInstance().GetProductosByType(searchValue);
             if (Products.Count == 0)
             {
                 MessageBox.Show(String.Format("No se encuentran productos del tipo {0}", searchValue));
@@ -72,10 +71,9 @@ namespace ClientFront.Forms
             }
         }
 
-        private void ShowProductByRubro(string searchValue, ref string searchOption)
+        private void ShowProductByRubro(string searchValue)
         {
-            searchOption = "RUBRO";
-            Products = Data.GetInstance().ListarProductosOrdenados().Where(p => p.Rubro.ToUpper() == searchValue.ToUpper()).ToList();
+            Products = Data.GetInstance().GetProductosByCategory(searchValue);
             if (Products.Count == 0)
             {
                 MessageBox.Show(String.Format("No se encuentran productos del rubro {0}", searchValue));
@@ -89,10 +87,9 @@ namespace ClientFront.Forms
             }
         }
 
-        private void ShowProductByCode(string searchValue, ref string searchOption, ref Producto product)
+        private void ShowProductByCode(string searchValue, ref Producto product)
         {
-            searchOption = "CODIGO";
-            product = Data.GetInstance().ListarProductosOrdenados().SingleOrDefault(p => p.Codigo == searchValue);
+            product = Data.GetInstance().GetProductoByCode(searchValue);
             if (product == null)
             {
                 MessageBox.Show(String.Format("El producto con código {0} no se encuentra.", searchValue));
@@ -103,10 +100,9 @@ namespace ClientFront.Forms
             }
         }
 
-        private void ShowProductByName(string searchValue, ref string searchOption, ref Producto product)
+        private void ShowProductByName(string searchValue, ref Producto product)
         {
-            searchOption = "NOMBRE";
-            product = Data.GetInstance().ListarProductosOrdenados().SingleOrDefault(p => p.Nombre.ToUpper() == searchValue.ToUpper());
+            product = Data.GetInstance().GetProductByName(searchValue);
             if (product == null)
             {
                 MessageBox.Show(String.Format("El producto de nombre {0} no se encuentra.", searchValue));
