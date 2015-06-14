@@ -43,7 +43,7 @@ namespace BusinessLogic
                 Apellido = "Canabarro",
                 Contrasenia = "andresito",
                 Direccion = "Bulevar Espania 2873",
-                Email = "andrescanabarro@gmail.com",
+                Email = "andrescanabarro2@gmail.com",
                 Nombre = "Andres",
                 Telefono_Celular = "098657882"
             };
@@ -138,7 +138,7 @@ namespace BusinessLogic
 
         public void BorrarUsuario(Usuario u)
         {
-            usuarios.Remove(u);
+            usuarios = usuarios.FindAll(usu => !usu.Email.Equals(u.Email)).ToList();
         }
 
         public List<Producto> ListarProductosOrdenados()
@@ -234,7 +234,7 @@ namespace BusinessLogic
                 Direccion = direccion,
                 Email = email
             };
-            usuarios.Remove(usu);
+            BorrarUsuario(usu);
             usuarios.Add(usu);
             return "";
         
@@ -258,6 +258,14 @@ namespace BusinessLogic
         public List<Producto> GetProductosByCategory(string category)
         {
             return ListarProductosOrdenados().Where(p => p.Rubro.ToUpper() == category.ToUpper()).ToList();
+        }
+        public Usuario DevolverUsuario(string mail)
+        {
+            foreach (Usuario u in DevolverUsuarios())
+            {
+                if (u.Email.Equals(mail)) return u;
+            }
+            return null;
         }
     }
 }
