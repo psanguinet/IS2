@@ -239,5 +239,25 @@ namespace BusinessLogic
             return "";
         
         }
+
+        public Producto GetProductByName(string name)
+        {
+            return ListarProductosOrdenados().SingleOrDefault(p => p.Nombre.ToUpper() == name.ToUpper());
+        }
+
+        public Producto GetProductoByCode(string code)
+        {
+            return ListarProductosOrdenados().SingleOrDefault(p => p.Codigo.ToUpper() == code);
+        }
+
+        public List<Producto> GetProductosByType(string type)
+        {
+            return ListarProductosOrdenados().Where(p => p.Tipo.ToUpper() == type.ToUpper()).ToList();
+        }
+
+        public List<Producto> GetProductosByCategory(string category)
+        {
+            return ListarProductosOrdenados().Where(p => p.Rubro.ToUpper() == category.ToUpper()).ToList();
+        }
     }
 }

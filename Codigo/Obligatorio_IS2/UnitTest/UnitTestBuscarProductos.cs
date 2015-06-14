@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using BusinessLogic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -27,28 +28,28 @@ namespace UnitTest
         [TestMethod]
         public void TestBuscarProductosNombre()
         {
-            Assert.AreEqual(p.Nombre, null);//en lugar de null hay que poner el metodo que busca el producto
-            Assert.AreEqual(p.Nombre.ToUpper(), null);//en lugar de null hay que poner el metodo que busca el producto
+            Assert.AreEqual(p.Nombre, Data.GetInstance().GetProductByName(p.Nombre).Nombre);//CP1
+            Assert.AreEqual(null, Data.GetInstance().GetProductByName("Manzanas Rojas"));//CP2
         }
 
         [TestMethod]
         public void TestBuscarProductosCodigo()
         {
-            Assert.AreEqual(p.Codigo, null);//en lugar de null hay que poner el metodo que busca el producto
-            Assert.AreEqual(p.Codigo.ToUpper(), null);//en lugar de null hay que poner el metodo que busca el producto
+            Assert.AreEqual(p.Codigo, Data.GetInstance().GetProductoByCode(p.Codigo).Codigo);//CP3
+            Assert.AreEqual(null, Data.GetInstance().GetProductoByCode("ABC1"));//CP4
         }
 
         [TestMethod]
         public void TestBuscarProductosRubro()
         {
-            Assert.AreEqual(p.Rubro, null);//en lugar de null hay que poner el metodo que busca el producto
-            Assert.AreEqual(p.Rubro.ToUpper(), null);//en lugar de null hay que poner el metodo que busca el producto
+            Assert.IsTrue( Data.GetInstance().GetProductosByCategory(p.Rubro).Count()>0);//CP5
+            Assert.IsTrue(Data.GetInstance().GetProductosByCategory("ELECTRODOMESTICOS").Count==0);//CP6
         }
         [TestMethod]
         public void TestBuscarProductosTipo()
         {
-            Assert.AreEqual(p.Tipo, null);//en lugar de null hay que poner el metodo que busca el producto
-            Assert.AreEqual(p.Tipo.ToUpper(), null);//en lugar de null hay que poner el metodo que busca el producto
+            Assert.IsTrue( Data.GetInstance().GetProductosByType(p.Tipo).Count()>0);//CP7
+            Assert.IsTrue(Data.GetInstance().GetProductosByType("TIPO_1").Count==0);//CP8
         }
     }
 }
