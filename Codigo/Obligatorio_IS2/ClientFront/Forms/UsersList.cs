@@ -69,6 +69,9 @@ namespace ClientFront.Forms
                 {
                     BusinessLogic.Data.GetInstance().BorrarUsuario(usuario);
                     this.Close();
+                    MessageBox.Show(string.Format("El usuario {0} {1} se borró correctamente", usuario.Nombre, usuario.Apellido));
+                    //UsersList users = new UsersList();
+                    //users.Show();
                 }
                
             }
