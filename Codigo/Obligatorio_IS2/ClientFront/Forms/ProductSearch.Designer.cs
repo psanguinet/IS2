@@ -77,6 +77,7 @@
             this.rbtNombre.TabStop = true;
             this.rbtNombre.Text = "Nombre";
             this.rbtNombre.UseSelectable = true;
+            this.rbtNombre.CheckedChanged += new System.EventHandler(this.rbtNombre_CheckedChanged);
             // 
             // rbtCodigo
             // 
@@ -87,6 +88,7 @@
             this.rbtCodigo.TabIndex = 2;
             this.rbtCodigo.Text = "Código";
             this.rbtCodigo.UseSelectable = true;
+            this.rbtCodigo.CheckedChanged += new System.EventHandler(this.rbtCodigo_CheckedChanged);
             // 
             // rbtTipo
             // 
@@ -97,6 +99,7 @@
             this.rbtTipo.TabIndex = 3;
             this.rbtTipo.Text = "Tipo";
             this.rbtTipo.UseSelectable = true;
+            this.rbtTipo.CheckedChanged += new System.EventHandler(this.rbtTipo_CheckedChanged);
             // 
             // rbtRubro
             // 
@@ -107,6 +110,7 @@
             this.rbtRubro.TabIndex = 4;
             this.rbtRubro.Text = "Rubro";
             this.rbtRubro.UseSelectable = true;
+            this.rbtRubro.CheckedChanged += new System.EventHandler(this.rbtRubro_CheckedChanged);
             // 
             // btnBuscar
             // 

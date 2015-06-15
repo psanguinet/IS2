@@ -138,5 +138,25 @@ namespace ClientFront.Forms
                 ObjectToForm(Products.ElementAt(position));
             }
         }
+
+        private void rbtNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            this.btnSiguiente.Visible = false;
+        }
+
+        private void rbtCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            this.btnSiguiente.Visible = false;
+        }
+
+        private void rbtRubro_CheckedChanged(object sender, EventArgs e)
+        {
+            this.btnSiguiente.Visible = false;
+        }
+
+        private void rbtTipo_CheckedChanged(object sender, EventArgs e)
+        {
+            this.btnSiguiente.Visible = false;
+        }
     }
 }
