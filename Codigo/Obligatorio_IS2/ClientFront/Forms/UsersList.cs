@@ -82,9 +82,17 @@ namespace ClientFront.Forms
 
         }
 
+<<<<<<< HEAD
         private void lblBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+=======
+        private void UsersList_Activated(object sender, EventArgs e)
+        {
+            Init();
+        }
+
+>>>>>>> Desarrollo_Andres
     }
 }

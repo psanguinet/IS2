@@ -196,7 +196,8 @@ namespace BusinessLogic
             if (direccion.Equals("")) return "La dirección no puede ser vacía";
             if (telefonoCelular.Equals("")) return "El teléfono celular no puede ser vacio";
             if (!TelefonoValido(telefonoCelular)) return "El telefono debe tener 9 dígitos";
-            if (FormatoMailAdecuado(email)) return "El mail es inválido";
+            if (email.Equals("")) return "El mail no puede ser vacío";
+            if (!FormatoMailAdecuado(email)) return "El mail es inválido";
 
             Usuario usu = new Usuario()
             {
@@ -223,6 +224,7 @@ namespace BusinessLogic
             if (direccion.Equals("")) return "La dirección no puede ser vacía";
             if (telefonoCelular.Equals("")) return "El teléfono celular no puede ser vacio";
             if (!TelefonoValido(telefonoCelular)) return "El telefono debe tener 9 dígitos";
+            if (email.Equals("")) return "El mail no puede ser vacío";
             if (!FormatoMailAdecuado(email)) return "El mail es inválido";
 
             Usuario usu = new Usuario()

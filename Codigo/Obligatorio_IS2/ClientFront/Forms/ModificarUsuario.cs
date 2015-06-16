@@ -30,7 +30,10 @@ namespace ClientFront.Forms
             if (!resultado.Equals(""))
                 MessageBox.Show(resultado, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
+            {
                 MessageBox.Show("Usuario modificado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
         }
 
         private void CargarCampos(Usuario u)

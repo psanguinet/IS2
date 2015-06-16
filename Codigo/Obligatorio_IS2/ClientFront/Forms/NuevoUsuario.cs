@@ -24,10 +24,13 @@ namespace ClientFront.Forms
         private void metroButton1_Click(object sender, EventArgs e)
         {
             string resultado = Data.GetInstance().AgregarUsuario(nombre.Text, apellido.Text, contrasenia.Text, confContrasenia.Text, direccion.Text, telefonoCelular.Text, email.Text);
-           if (!resultado.Equals(""))
-            MessageBox.Show(resultado, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-           else
-               MessageBox.Show("Usuario agregado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (!resultado.Equals(""))
+                MessageBox.Show(resultado, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                MessageBox.Show("Usuario agregado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
         }
 
         private void lblBack_Click(object sender, EventArgs e)
