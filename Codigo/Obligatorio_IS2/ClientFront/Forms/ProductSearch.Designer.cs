@@ -49,6 +49,7 @@
             this.lblCodigoValue = new MetroFramework.Controls.MetroLabel();
             this.lblCodigo = new MetroFramework.Controls.MetroLabel();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.lblBack = new MetroFramework.Controls.MetroLabel();
             this.panelProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -286,11 +287,23 @@
             this.pictureBox.TabIndex = 2;
             this.pictureBox.TabStop = false;
             // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBack.Location = new System.Drawing.Point(10, 561);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(68, 19);
+            this.lblBack.TabIndex = 7;
+            this.lblBack.Text = "<< Volver";
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+            // 
             // ProductSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lblBack);
             this.Controls.Add(this.panelProduct);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.rbtRubro);
@@ -330,5 +343,6 @@
         private MetroFramework.Controls.MetroLabel lblNombre;
         private MetroFramework.Drawing.Html.HtmlLabel lblPrecioValue;
         private MetroFramework.Controls.MetroTile btnSiguiente;
+        private MetroFramework.Controls.MetroLabel lblBack;
     }
 }

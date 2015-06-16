@@ -43,6 +43,11 @@ namespace ClientFront.Forms
              direccion.Text = u.Direccion;
              email.Text = u.Email;            
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         
     }
 }

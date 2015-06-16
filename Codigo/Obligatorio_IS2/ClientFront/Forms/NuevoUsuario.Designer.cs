@@ -44,6 +44,7 @@
             this.email = new MetroFramework.Controls.MetroTextBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.lblBack = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -118,7 +119,7 @@
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.Location = new System.Drawing.Point(37, 289);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(105, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(107, 19);
             this.metroLabel7.TabIndex = 7;
             this.metroLabel7.Text = "Telefono_Celular";
             // 
@@ -212,7 +213,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(146, 371);
+            this.metroButton1.Location = new System.Drawing.Point(349, 371);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(117, 28);
             this.metroButton1.TabIndex = 15;
@@ -220,11 +221,23 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBack.Location = new System.Drawing.Point(32, 380);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(68, 19);
+            this.lblBack.TabIndex = 16;
+            this.lblBack.Text = "<< Volver";
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+            // 
             // NuevoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 432);
+            this.Controls.Add(this.lblBack);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.email);
@@ -266,5 +279,6 @@
         private MetroFramework.Controls.MetroTextBox email;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroLabel lblBack;
     }
 }

@@ -29,6 +29,11 @@ namespace ClientFront.Forms
            else
                MessageBox.Show("Usuario agregado correctamente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         
     }
 }

@@ -31,5 +31,10 @@ namespace ClientFront.Forms
                 throw;
             }
         }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

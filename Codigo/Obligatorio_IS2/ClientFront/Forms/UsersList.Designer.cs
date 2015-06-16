@@ -41,6 +41,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDeleteUser = new System.Windows.Forms.Button();
+            this.lblBack = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,11 +162,23 @@
             this.btnDeleteUser.UseVisualStyleBackColor = true;
             this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 
+            // lblBack
+            // 
+            this.lblBack.AutoSize = true;
+            this.lblBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBack.Location = new System.Drawing.Point(40, 561);
+            this.lblBack.Name = "lblBack";
+            this.lblBack.Size = new System.Drawing.Size(68, 19);
+            this.lblBack.TabIndex = 5;
+            this.lblBack.Text = "<< Volver";
+            this.lblBack.Click += new System.EventHandler(this.lblBack_Click);
+            // 
             // UsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lblBack);
             this.Controls.Add(this.btnDeleteUser);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -174,6 +187,7 @@
             this.Text = "Listado de usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.gridUsers)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,5 +203,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnDeleteUser;
+        private MetroFramework.Controls.MetroLabel lblBack;
     }
 }

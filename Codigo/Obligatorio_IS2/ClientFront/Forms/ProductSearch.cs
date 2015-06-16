@@ -27,7 +27,7 @@ namespace ClientFront.Forms
             string searchOption = string.Empty;
             Producto product = null;
             Products = new List<Producto>();
-
+            this.btnSiguiente.Visible = false;
            
             if (searchValue != string.Empty)
             {
@@ -157,6 +157,11 @@ namespace ClientFront.Forms
         private void rbtTipo_CheckedChanged(object sender, EventArgs e)
         {
             this.btnSiguiente.Visible = false;
+        }
+
+        private void lblBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
