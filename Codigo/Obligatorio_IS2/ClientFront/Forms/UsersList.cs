@@ -81,5 +81,11 @@ namespace ClientFront.Forms
             }
 
         }
+
+        private void UsersList_Activated(object sender, EventArgs e)
+        {
+            Init();
+        }
+
     }
 }
