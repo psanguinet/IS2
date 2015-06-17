@@ -1,0 +1,19 @@
+diff a/Codigo/Obligatorio_IS2/ClientFront/Forms/UsersList.cs b/Codigo/Obligatorio_IS2/ClientFront/Forms/UsersList.cs	(rejected hunks)
+@@ -82,17 +82,14 @@
+ 
+         }
+ 
+-<<<<<<< HEAD
+         private void lblBack_Click(object sender, EventArgs e)
+         {
+             this.Close();
+         }
+-=======
+         private void UsersList_Activated(object sender, EventArgs e)
+         {
+             Init();
+         }
+ 
+->>>>>>> Desarrollo_Andres
+     }
+ }

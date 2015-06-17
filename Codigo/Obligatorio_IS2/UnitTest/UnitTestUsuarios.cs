@@ -91,7 +91,7 @@ namespace UnitTest
             cantidadAnterior = Data.GetInstance().DevolverUsuarios().Count;
             Data.GetInstance().AgregarUsuario(u2.Nombre, u2.Apellido, u2.Contrasenia, u2.Contrasenia, u2.Direccion, u2.Telefono_Celular, "andrescanabarro.gmail.com");
             cantidadPosterior = Data.GetInstance().DevolverUsuarios().Count;
-          //  Assert.AreEqual(cantidadAnterior, cantidadPosterior); //CP13
+          Assert.AreEqual(cantidadAnterior, cantidadPosterior); //CP13
 
             Data.GetInstance().BorrarUsuario(u2);
             cantidadAnterior = Data.GetInstance().DevolverUsuarios().Count;
@@ -131,7 +131,7 @@ namespace UnitTest
             Data.GetInstance().ModificarUsuario(u2.Nombre, u2.Apellido, "Nano1001", "Pablo1001", u2.Direccion, u2.Telefono_Celular, u2.Email);
             Assert.AreEqual(contraAnterior, Data.GetInstance().DevolverUsuario(u2.Email).Contrasenia); //CP9
 
-            string direccionAnterior = u2.Contrasenia;
+            string direccionAnterior = u2.Direccion;
             Data.GetInstance().ModificarUsuario(u2.Nombre, u2.Apellido, u2.Contrasenia, u2.Contrasenia, "", u2.Telefono_Celular, u2.Email);
             Assert.AreEqual(direccionAnterior, Data.GetInstance().DevolverUsuario(u2.Email).Direccion); //CP10
 
